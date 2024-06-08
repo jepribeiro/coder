@@ -1,0 +1,55 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+  margin: 0;
+}
+body {
+  border: 3px solid;
+  border-color: rgb(253, 239, 44);
+}
+
+header {
+  display: grid;
+  background-color: rgb(255, 114, 220);
+  padding: 10px;
+  color: yellow;
+}
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  margin: 0;
+}
+.top-container > h2 {
+  font-size: 18px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.menu-link > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-link > ul > li {
+  display: inline;
+  float: left;
+}
+
+.menu-links {
+  text-decoration: none;
+  padding-right: 10px;
+  color: rgba(247, 247, 27, 0.918);
+}
