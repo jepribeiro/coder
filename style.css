@@ -70,7 +70,6 @@
   header > h2 {
     font-size: 1.2rem;
     padding: 0;
-    padding-left: 10px;
     text-shadow: 1px 0 var(--pink);
     color: var(--yellow);
   }
@@ -97,12 +96,21 @@
   }
 }
 @layer trabalhos {
+  .trabalho-eventos_evento > h3 {
+    padding: 0;
+  }
+  .trabalho-eventos_evento {
+    width: 360px;
+    border: 3px dotted var(--yellow-hover);
+    border-radius: 12px;
+    justify-self: center;
+  }
+
   .trabalho-imagem {
     border: 2px solid var(--yellow-hover);
     width: 350px;
     height: 350px;
     border-radius: 12px;
-    margin: 10px;
   }
 }
 
@@ -151,6 +159,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 15px;
+      justify-content: center;
     }
   }
 }
