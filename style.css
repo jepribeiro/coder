@@ -27,6 +27,7 @@
     margin: 0;
     color: var(--pink);
     text-shadow: 1px 0 var(--yellow-hover);
+    padding: 0;
     padding-bottom: 30px;
   }
 
@@ -35,6 +36,7 @@
   a {
     list-style: none;
     padding: 0;
+    margin: 0;
     text-decoration: none;
     color: var(--yellow);
   }
@@ -103,7 +105,7 @@
     width: 360px;
     border: 3px dotted var(--yellow-hover);
     border-radius: 12px;
-    justify-self: center;
+    margin: 20px auto 20px;
   }
 
   .trabalho-imagem {
@@ -139,6 +141,9 @@
       grid-template-columns: 1fr 1fr;
       gap: 15px;
     }
+    .trabalho-eventos_evento {
+      justify-self: center;
+    }
   }
 }
 
@@ -159,7 +164,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 15px;
-      justify-content: center;
+    }
+    .trabalho-eventos_evento {
+      justify-self: center;
     }
   }
 }
