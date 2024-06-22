@@ -27,6 +27,7 @@
     margin: 0;
     color: var(--pink);
     text-shadow: 1px 0 var(--yellow-hover);
+    padding-bottom: 30px;
   }
 
   ul,
@@ -47,7 +48,7 @@
     border-style: dotted none none none;
     color: var(--yellow);
     width: 20%;
-    margin: 20px auto 20px;
+    margin: 40px auto 40px;
   }
 }
 
@@ -68,6 +69,7 @@
 
   header > h2 {
     font-size: 1.2rem;
+    padding: 0;
     padding-left: 10px;
     text-shadow: 1px 0 var(--pink);
     color: var(--yellow);
@@ -75,23 +77,19 @@
 
   .menu-link > ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 8px;
     font-size: 0.75rem;
     color: var(--pink);
-    padding: 10px;
+    padding-right: 10px;
     font-weight: bold;
   }
 }
 @layer apresentacao {
-  h1 {
-    padding-bottom: 10px;
-  }
   .apresentacao > p {
     width: 80%;
     margin: auto;
     text-align: justify;
-    padding-bottom: 10px;
   }
   .apresentacao_img {
     width: 100vw;
@@ -99,13 +97,6 @@
   }
 }
 @layer trabalhos {
-  .trabalho-eventos > h2 {
-    padding: 10px;
-  }
-
-  .trabalho-eventos_evento {
-  }
-
   .trabalho-imagem {
     border: 2px solid var(--yellow-hover);
     width: 350px;
@@ -116,4 +107,50 @@
 }
 
 @layer contato {
+}
+
+@media only screen and (min-width: 768px) {
+  @layer header {
+    header > h2 {
+      font-size: 2rem;
+    }
+    .menu-link > ul {
+      font-size: 1.2rem;
+    }
+  }
+
+  @layer apresentacao {
+    .apresentacao > p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @layer trabalhos {
+    .trabalho-eventos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  @layer apresentacao {
+    h1 {
+      font-size: 2.5rem;
+      padding: 15px;
+    }
+
+    .apresentacao > p {
+      font-size: 2rem;
+    }
+  }
+
+  @layer trabalhos {
+    .trabalho-eventos {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+    }
+  }
 }
